@@ -97,14 +97,14 @@
         transition: all.2s;
     }
 
-    &:hover {
+    &:hover{
         background-color: $color-primary;
         color: $color-primary-text;
         box-shadow: 0 1rem 1rem rgba($color-black, .2);
         transform: translateY(-2px);
     }
 
-    &:active {
+    &:active{
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
         transform: translateY(0);
     }

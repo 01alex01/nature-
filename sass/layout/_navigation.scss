@@ -22,10 +22,11 @@
         @include respond(tab-port){
             top: 4rem;
             right: 4rem;
+            
         }
 
         @include respond(phone){
-            top: 3rem;
+            margin-top: 1.2rem;
             right: 3rem;
         }
         
@@ -52,7 +53,7 @@
         }
 
         @include respond(phone){
-            top: 3.5rem;
+           margin-top: 1.5rem;
             right: 3.5rem;
         }
     }
@@ -87,7 +88,7 @@
     }
 
     &__link {
-
+      
         &:link,
         &:visited{
 
@@ -102,7 +103,12 @@
             background-image: linear-gradient(120deg,transparent 0%, transparent 50%, $color-primary-text 50%);
             background-size: 230%;
             transition: all .4s;
-
+          
+            
+           
+                 @include respond(phone){
+                    font-size: 2rem;
+                 }
 
             span{
                 margin-right: 1.5rem;
@@ -116,6 +122,15 @@
             background-position: 100%;
             color: $color-primary-dark;
             transform: translateX(1rem);
+           @include respond(phone){
+            display: none;
+           }
+           @include respond(tab-port){
+             display: none;
+           }
+           @include respond(land-port){
+             display: none;
+           }
         }
 
     }
@@ -128,6 +143,9 @@
     &__checkbox:checked ~ &__nav{
         width: 100%;
         opacity: 1;
+        @include respond(tab-port){
+            width: 100%;
+        }
     }
 
 

@@ -44,12 +44,13 @@ body {
         */
 
         @include respond(phone){
-            letter-spacing: 1rem;
-            font-family: 5rem;
+            letter-spacing: 9px;
+            font-size: 1rem;
         }
         @include respond(tab-port){
-            letter-spacing: 1rem;
-            font-size: 5rem;
+            letter-spacing: 8px;
+            font-size: 4rem;
+            
         }
     }
 
@@ -70,6 +71,7 @@ body {
         }
         @include respond(tab-port){
             letter-spacing: .5rem;
+            font-size: 10px;
            
         }
     }
