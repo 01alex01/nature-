@@ -44,7 +44,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
 
 @mixin respond($breakpoint) {
     @if $breakpoint ==phone {
-        @media only screen and (max-width:37.5em) {
+        @media only screen and (max-width:37 .5em) {
             @content
         };}
     @if $breakpoint == tab-port {
