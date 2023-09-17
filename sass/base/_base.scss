@@ -4,36 +4,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     //this defines what 1rem is
     font-size: 62.5%;
 
- 
-    @include respond(tab-land){
-        font-size: 56.25%;//1rem = 9px, 9/16=50%
+
+    @include respond(tab-land) {
+        font-size: 56.25%; //1rem = 9px, 9/16=50%
     }
-    @include respond(tab-port){
-        font-size: 50%;//1rem = 8px, 8/16=50%//1rem = 9px
+
+    @include respond(tab-port) {
+        font-size: 50%; //1rem = 8px, 8/16=50%//1rem = 9px
     }
-    @include respond(big-desktop){
+
+    @include respond(big-desktop) {
         font-size: 70%; //1rem = 12, 12/16
     }
 }
 
 body {
     box-sizing: border-box;
-    padding: 3rem;
+    padding: 1rem;
 
-    @include respond(tab-port){
+
+    @include respond(tab-port) {
         padding: 0;
     }
-    @include respond(phone){
+
+    @include respond(phone) {
         padding: .1;
     }
 
- 
+
 }
-::selection{
+
+::selection {
     background-color: $color-primary;
     color: $color-primary-text;
 }
